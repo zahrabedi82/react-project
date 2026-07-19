@@ -1,64 +1,113 @@
-.navbar {
-    width: 100%;
-    height: 90px;
-    background-color: #000;
+.header {
+  width: 100%;
+  height: 90px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
-.navbar .container {
-    max-width: 1140px;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header .container {
+  max-width: 1240px;
+  height: 100%;
+  margin: auto;
+  padding: 0 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbar .nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header h1 {
+  color: #000;
 }
 
-.navbar li {
-    padding: 1rem;
+.header .primary {
+  color: #26a059;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu li {
+  padding: 0 1rem;
+}
+
+.nav-menu a {
+  color: #333;
+  font-weight: 500;
+}
+
+.btn-group {
+  display: flex;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  background: #26a059;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #1d7f47;
 }
 
 .hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* ================= MOBILE ================= */
+
+@media screen and (max-width: 940px) {
+  .btn-group {
     display: none;
-}
+  }
 
-.navbar .icon {
-    color: #f4eeff;
-    font-size: 2rem;
-}
+  .hamburger {
+    display: block;
+    z-index: 20;
+  }
 
-.navbar h1,a {
-    color: #f4eeff;
-}
+  .nav-menu {
+    position: absolute;
+    top: 90px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 90px);
 
-@media screen and (max-width:940px) {
-    .hamburger {
-        display: block;
-    }
+    background: #fff;
 
-    .nav {
-        position: absolute;
-        flex-direction: column;
-        justify-content: start!important;
-        top: 90px;
-        left: -100%;
-        width: 100%;
-        height: 100vh;
-        background-color: #000;
-        transition: 0.3s;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 
-    .nav.active {
-        left: 0;
-    }
+    transition: 0.4s ease;
+  }
 
-    .nav a {
-        font-size: 1.4rem;
-    }
+  .nav-menu.active {
+    left: 0;
+  }
 
+  .nav-menu li {
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-menu a {
+    font-size: 1.2rem;
+    color: #333;
+  }
 }

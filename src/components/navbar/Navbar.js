@@ -28,17 +28,16 @@ const Navbar = () => {
         <div className="btn-group">
           <button className="btn">Connect Wallet</button>
         </div>
-        <div className="hamburger" onClick={handleClick}>
-          <div className="hamburger" onClick={handleClick}>
-            {click ? (
-              <FaTimes size={20} style={{ color: "#26a059" }} />
-            ) : (
-              <FaBars size={20} style={{ color: "#26a059" }} />
-            )}
-          </div>
+     <div className="hamburger" onClick={handleClick}>
+  {click ? (
+    <FaTimes size={20} style={{ color: "#26a059" }} />
+  ) : (
+    <FaBars size={20} style={{ color: "#26a059" }} />
+  )}
+</div>
         </div>
       </div>
-    </div>
+
   );
 };
 
