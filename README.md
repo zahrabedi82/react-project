@@ -8,7 +8,8 @@ A modern and responsive cryptocurrency landing page built with React.
 
 ## 📸 Preview
 
-![Project Preview](public/preview.png)
+![Project Preview](![Uploading image.png…]()
+)
 
 
 ## 📂 GitHub Repository
