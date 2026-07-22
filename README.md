@@ -1,4 +1,9 @@
 # 🚀 Crypto Website
+![React](https://img.shields.io/badge/React-19-blue?logo=react)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript)
+![CSS3](https://img.shields.io/badge/CSS3-blue?logo=css3)
+![Axios](https://img.shields.io/badge/Axios-API-purple)
+![Vercel](https://img.shields.io/badge/Deployed-Vercel-black?logo=vercel)
 
 A modern and responsive cryptocurrency landing page built with React.
 
