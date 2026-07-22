@@ -43,23 +43,23 @@
 .featured .right .card:hover {
   box-shadow: rgba(2, 2, 2, 0.2) 0px 8px 24px;
 }
-.featured .card .top{
+.featured .card .top {
   display: flex;
   flex-direction: column;
 }
-.featured .right .img{
+.featured .right .img {
   width: 25px;
   margin: auto;
   padding: 0.2rem 0;
 }
-.featured .icon{
+.featured .icon {
   font-size: 36px;
   margin: auto;
   padding-top: 6px;
   justify-content: center;
   align-items: center;
 }
-.featured span{
+.featured span {
   font-size: 22px;
 }
 
@@ -69,19 +69,16 @@
 .red {
   color: rgb(212, 9, 9);
 }
-@media  screen and (max-width: 940px) {
-  .featured .container{
+@media screen and (max-width: 940px) {
+  .featured .container {
     grid-template-columns: 1fr;
   }
-  .featured .left .btn{
+  .featured .left .btn {
     align-self: center;
   }
-
-  
 }
-@media  screen and (max-width: 470px){
-  .featured .container .right .card{
+@media screen and (max-width: 470px) {
+  .featured .container .right .card {
     width: 100%;
   }
-
 }
