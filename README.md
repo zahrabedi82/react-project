@@ -7,10 +7,7 @@ A modern and responsive cryptocurrency landing page built with React.
 🔗 https://react-project-zahra21.vercel.app
 
 ## 📸 Preview
-
-Uploading image.png…
-
-
+<img width="1322" height="608" alt="image" src="https://github.com/user-attachments/assets/ae516ae9-2b7f-4ddd-9345-aac10368211c" />
 
 ## 📂 GitHub Repository
 
